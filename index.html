@@ -5,14 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <style>
+      .hero-banner {
+        position: relative;
+        background-image: url(Images/color-splash-abstract-background-for-design-template-banner-and-cover-for-social-media-ad-template-special-promo-new-arrival-sale-free-vector.jpg);
+        height: 400px;
+        display: flex;
+        align-items: center;
+        color: white;
+
+      }
+
+      .hero-banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, rgb(30, 3, 65) 35%, transparent);
+        z-index: 1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }   
+
+    </style>
 </head>
 
-<body>
+<body class="bg-light">
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 mb-4 p-4">
+    <nav class="navbar navbar-expand-lg bg-light py-3 mb-4 p-4">
         <div class="container-fluid">
           <a class="navbar-brand d-inline-flex" href="#"><img src="/Images/Goodreads_logo.svg.png" width="120" height="auto" alt="Goodreads_logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,8 +91,8 @@
 
   <main>
     <section id="hero" class="hero">
-      <div class="containers">
-        <div class="d-flex row justify-content-center align-items-center g-5 py-5 bg-dark bg-gradient text-white">
+      <div class="containers hero-banner">
+        <div class="d-flex row justify-content-center align-items-center g-5 py-5 hero-content">
           <div class="col-lg-6 align-items-center hero-content">
             <!-- <div class="bg-image p-5 text-white" style="background-image: url(Images/color-splash-abstract-background-for-design-template-banner-and-cover-for-social-media-ad-template-special-promo-new-arrival-sale-free-vector.jpg);"> -->
               <!-- <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);"> -->
@@ -121,7 +153,7 @@
       </div>
     </section>
 
-    <section id="cards" class="py-5">
+    <section id="cards" class="py-5 bg-body-primary">
       <div class="container container text-center">
         <h2 class="mb-4">New and Popular Books</h2>
 
@@ -175,7 +207,7 @@
         <div class="row">
 
           <div class="col-sm-6 col-lg-3">
-            <div class="card text-bg-dark">
+            <div class="card text-bg-danger">
               <img src="Images/Lily_Mandala_Assignment.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text">“You know you're in love when you can't fall asleep because reality is finally better than your dreams.” ―  Dr. Seuss</p>
@@ -185,8 +217,8 @@
 
 
           <div class="col-sm-6 col-lg-3">
-            <div class="card text-bg-dark">
-              <img src="Images/Lily_Mandala_Assignment.jpg"card-img-top" alt="...">
+            <div class="card text-bg-danger">
+              <img src="Images/Lily_Mandala_Assignment.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text">“Success isn’t just about what you accomplish in your life. 
                     It’s about what you inspire others to do” ― Lewis Howes</p>
@@ -195,7 +227,7 @@
           </div>
 
           <div class="col-sm-6 col-lg-3">
-            <div class="card text-bg-dark">
+            <div class="card text-bg-danger">
               <img src="Images/Lily_Mandala_Assignment.jpg"class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text">“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.” ― Albert Einstein</p>
@@ -205,7 +237,7 @@
 
 
           <div class="col-sm-6 col-lg-3">
-            <div class="card text-bg-dark">
+            <div class="card text-bg-danger">
               <img src="Images/Lily_Mandala_Assignment.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text">“Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.” ― Martin Luther King Jr.</p>

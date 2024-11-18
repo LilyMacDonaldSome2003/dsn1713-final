@@ -1,12 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000);
 
+@import url(family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+
+$body-bg: #f2f2f2;
 
 $primary: #4F2800;
-$secondary: #856A00;
-$success: #660033;
-$info: ;
-$warning: ;
-$danger: ;
-$light: ;
-$dark: ;
+$secondary: #660033;
+$tertiary: #856A00;
+$danger: #FFEEDE;
+$info: #888888;
+$light: #FFEEDE;
+$dark: #333333;
+
+
+$navbar-bg-primary: #FFEEDE;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
