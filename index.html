@@ -12,6 +12,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <style>
       .hero-banner {
         position: relative;
@@ -38,7 +39,31 @@
         position: relative;
         z-index: 2;
       } 
+
+      .col-sm-6, .col-lg-4 h2 {
+        color: black;
+      }
+
+      h1, h2, h3, .btn {
+        font-family: "Nunito Sans", serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      p {
+        font-family: "Roboto", serif;
+        font-weight: 400;
+        font-style: normal;
+
+      }
+
+        .intro h2 {
+          color: #660033;
+        }
       
+      .first h2 {
+        color: #4F2800;
+      }  
 
     </style>
 </head>
@@ -48,7 +73,7 @@
     <nav class="navbar navbar-expand-lg bg-light py-3 mb-4 p-4">
         <div class="container-fluid">
           <a class="navbar-brand d-inline-flex" href="#"><img src="/Images/Goodreads_logo.svg.png" width="120" height="auto" alt="Goodreads_logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="container-fluid collapse navbar-collapse" id="navbarNavDropdown">
@@ -75,14 +100,16 @@
               
               <form class="d-flex col-md-6" role="search">
                 <input class="form-control me-2" type="search" placeholder="Title/Genre/Author/ISBN" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn" type="submit"><span class="material-symbols-outlined">
+                  search
+                  </span></button>
               </form>
 
               
             </ul>
 
             <div class="col-md-2 text-end">
-                <button class="btn btn-outline-secondary" type="button">Sign In</button>
+                <button class="btn bg-primary text-white rounded-pill" type="button">Sign In</button>
               </div>
           </div>
           
@@ -101,7 +128,7 @@
                 <h1 class="mb-3">Meet your Next Favourite Book!</h1>
                 <p class="lead">Find and read more books you'll love, and keep track of the books you want to read. Be part of the world's largest community of book lovers on Goodreads</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-center align-items-center">
-                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Read More</button>
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 rounded-pill">Read More</button>
               </div>
             </div>
           </div>
@@ -138,10 +165,10 @@
       </div>
     </section>
 
-    <section id="two-column-section" class="py-5 text-white bg-dark"> 
+    <section id="two-column-section" class="py-5 text-white bg-danger"> 
       <div class="container">
         
-        <div class="row d-flex justify-content-center p-2 justify-content-md-evenly">
+        <div class="row d-flex justify-content-center p-2 justify-content-md-evenly first">
           <div class="col-sm-6 col-lg-4">
             <h2>Deciding What to Read?</h2>
             <p class="py-5">You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.</p>
@@ -154,44 +181,44 @@
       </div>
     </section>
 
-    <section id="cards" class="py-5 bg-body-primary">
-      <div class="container container text-center">
-        <h2 class="mb-4">New and Popular Books</h2>
+    <section id="cards" class="py-5 bg-body-white">
+      <div class="container container text-center intro">
+        <h2 class="mb-4 ">New and Popular Books</h2>
 
         <div class="row align-items-center justify-content-center p-5 gap-5">
 
           <div class="col-sm-6 col-lg-3">
-            <div class="card text-bg-dark">
+            <div class="card text-bg-white">
               <img src="Images/141511b207c847ab1e27b7f0b7a1c034.jpg" class="card-img-top" height="377" alt="...">
-              <div class="card-body">
+              <div class="card-body p-3">
                 <h5 class="card-title">The Empyrean #3
                   Onyx Storm</h5>
                 <p class="card-text">By Rebecca Yarros</p>
-                <a href="#" class="btn btn-light">Read More</a>
+                <a href="#" class="btn btn-secondary rounded-pill text-white">Read More</a>
               </div>
             </div>
           </div>
 
 
           <div class="col-sm-6 col-lg-3">
-            <div class="card text-bg-dark">
+            <div class="card text-bg-white">
               <img src="Images/pexels-ivan-samkov-7394378.jpg" class="card-img-top" height="400" alt="...">
-              <div class="card-body">
+              <div class="card-body p-3">
                 <h5 class="card-title">Funny Story</h5>
                 <p class="card-text">By Emily Henry</p>
-                <a href="#" class="btn btn-light">Read More</a>
+                <a href="#" class="btn btn-secondary rounded-pill text-white">Read More</a>
               </div>
             </div>
           </div>
 
           <div class="col-sm-6 col-lg-3">
-            <div class="card text-bg-dark">
+            <div class="card text-bg-white">
               <img src="Images/pexels-luis-erives-1457235-14517589.jpg" height="400" class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body p-3">
                 <h5 class="card-title">Maple Hills #3
                   Daydream</h5>
                 <p class="card-text">By Hannah Grace</p>
-                <a href="#" class="btn btn-light">Read More</a>
+                <a href="#" class="btn btn-secondary rounded-pill text-white">Read More</a>
               </div>
             </div>
           </div>
@@ -201,8 +228,8 @@
       </div>
     </section>
 
-    <section id="cards" class="py-5">
-      <div class="container container text-center">
+    <section id="cards" class="py-5 bg-danger">
+      <div class="container container text-center intro">
         <h2 class="mb-4">Quotes</h2>
 
         <div class="row">

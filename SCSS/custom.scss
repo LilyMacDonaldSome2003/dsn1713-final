@@ -8,7 +8,7 @@ $body-bg: #f2f2f2;
 $primary: #4F2800;
 $secondary: #660033;
 $success: #856A00;
-$danger: #FFEEDE;
+$danger: #ffffff;
 $info: #888888;
 $light: #FFEEDE;
 $dark: #333333;
@@ -17,3 +17,5 @@ $dark: #333333;
 $navbar-bg-primary: #FFEEDE;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
