@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <style>
+        .hero-banner {
+          position: relative;
+          background-image: url(Images/meeting_whiteboard_md-a7a1980cf0db2c50d30ad78fcc871966.jpg);
+          height: 400px;
+          display: flex;
+          align-items: center;
+          color: white;
+          justify-content: center;
+  
+        }
+  
+        .hero-banner::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(to bottom, rgb(74, 74, 74) 5%, transparent);
+          z-index: 1;
+        }
+  
+        .hero-content {
+          position: relative;
+          z-index: 2;
+        } 
+  
+        .col-sm-6, .col-lg-4 h2 {
+          color: black;
+        }
+  
+        h1, h2, h3, .btn {
+          font-family: "Nunito Sans", serif;
+          font-weight: 600;
+          font-style: normal;
+        }
+  
+        p {
+          font-family: "Roboto", serif;
+          font-weight: 400;
+          font-style: normal;
+  
+        }
+  
+          .intro h2 {
+            color: #660033;
+          }
+        
+        .first h2 {
+          color: #4F2800;
+        }  
+  
+        .lead {
+          font-weight: 400;
+        }
+        
+        #three-column-section p {
+          font-weight: 400;
+          font-size: small;
+        }
+  
+        svg {
+          color: #ffffff;
+        }
+  
+      </style>
+</head>
+<body class="bg-light">
+    <header>
+    <nav class="navbar navbar-expand-lg bg-light py-2 mb-2 p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand d-inline-flex" href="index.html"><img src="/Images/Goodreads_logo.svg.png" width="120" height="auto" alt="Goodreads_logo"></a>
+            <button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav col-md-10 p-0 mb-0 justify-content-md-evenly mb-md-0">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Browse
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">#</a></li>
+                    <li><a class="dropdown-item" href="#">!</a></li>
+                    <li><a class="dropdown-item" href="#">&</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-primary" aria-current="page" href="company.html">Company</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-primary" href="careers.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-primary" href="contact.html">Contact</a>
+                </li>
+                
+                <form class="d-flex col-md-6 " role="search">
+                <input class="form-control me-2 rounded-pill bg-white" type="search" placeholder="Title/Genre/Author/ISBN" aria-label="Search">
+                <button class="btn" type="submit"><span class="material-symbols-outlined">
+                    search</span>
+                </button>
+                </form>
+
+                
+            </ul>
+
+            <div class="col-md-2 text-end">
+                <button class="btn bg-primary text-white rounded-pill" type="button">Sign In</button>
+                </div>
+            </div>
+            
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="containers hero-banner">
+              <div class="hero-content">
+                <div class="text-center justify-content-center">
+                  <!-- <div class="bg-image p-5 text-white" style="background-image: url(Images/color-splash-abstract-background-for-design-template-banner-and-cover-for-social-media-ad-template-special-promo-new-arrival-sale-free-vector.jpg);"> -->
+                    <!-- <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);"> -->
+                      <h1 class="justify-content-center">Our Company</h1>
+                      <p class="lead">Knowledge is power, and power is best shared among readers</p>
+                      <div class="d-grid gap-2 d-md-flex justify-content-center align-items-center">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 rounded-pill">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- <h2>Good<strong>reads</strong></h2>
+                    <h1 class="mb-3">Meet your Next Favourite Book!</h1>
+                    <p class="lead">Find and read more books you'll love, and keep track of the books you want to read. Be part of the world's largest community of book lovers on Goodreads</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-center align-items-center">
+                      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Read More</button> -->
+              </div>
+            </div>
+      
+          </section>
+    </main>
+</body>
+</html>
